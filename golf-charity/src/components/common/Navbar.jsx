@@ -36,6 +36,7 @@ export default function Navbar() {
             <button className="btn-secondary" onClick={handleLogout} style={{ padding: '0.4rem 1rem' }}>
               Logout
             </button>
+            <Link to="/draw" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Draw</Link>
           </>
         ) : (
           <>
