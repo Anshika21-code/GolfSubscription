@@ -15,6 +15,7 @@ import AdminCharities from './pages/admin/AdminCharities'
 import AdminWinners from './pages/admin/AdminWinners'
 import Navbar from './components/common/Navbar'
 import Draw from './pages/Draw'
+import Footer from './components/common/Footer'
 
 const ProtectedRoute = ({ children, adminOnly = false }) => {
   const { user, profile, loading } = useAuth()
@@ -44,6 +45,7 @@ export default function App() {
         <Route path="/admin/winners" element={<ProtectedRoute adminOnly><AdminWinners /></ProtectedRoute>} />
         <Route path="/draw" element={<ProtectedRoute><Draw /></ProtectedRoute>} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
