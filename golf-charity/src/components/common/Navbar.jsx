@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Winners = () => {
+const Navbar = () => {
   return (
     <div>
-      fffc
+      fcf
     </div>
   )
 }
 
-export default Winners
+export default Navbar
